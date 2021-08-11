@@ -11,7 +11,6 @@ public class MailSendTest_4 {
     @Test
     void mailSendTest() {
         Configuration.timeout=30000;
-        Configuration.pageLoadTimeout =  30;
         Configuration.browser = "firefox";
         open("https://mail.ru/");
 

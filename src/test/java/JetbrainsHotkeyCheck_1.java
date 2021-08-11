@@ -11,7 +11,6 @@ public class JetbrainsHotkeyCheck_1 {
     void hotkeyCheck(){
         // Список горячих клавиш на jetbrains.com
         Configuration.timeout=30000;
-        Configuration.pageLoadTimeout =  30;
         Configuration.browser = "firefox";
         open("https://www.jetbrains.com/ru-ru/idea/resources/");
 

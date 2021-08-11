@@ -15,7 +15,6 @@ public class DownloadFileTest {
     @Test
         void downloadFile() throws FileNotFoundException, InterruptedException {
         Configuration.timeout=30000;
-        Configuration.pageLoadTimeout =  30;
         Configuration.browser = "firefox";
         Configuration.downloadsFolder = "C:\\TestDownload";
         fileDownload = FOLDER;
