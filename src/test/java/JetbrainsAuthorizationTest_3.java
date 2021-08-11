@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.*;
@@ -7,6 +8,9 @@ public class JetbrainsAuthorizationTest_3 {
     @Test
 
     void authorizationTest(){
+        Configuration.timeout=30000;
+        Configuration.pageLoadTimeout =  30;
+        Configuration.browser = "firefox";
         open("https://www.jetbrains.com/ru-ru/");
 
         $(".site-header__actions > div:nth-child(1) > div:nth-child(2) > a:nth-child(1)")

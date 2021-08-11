@@ -14,14 +14,15 @@ public class DownloadFileTest {
 
     @Test
         void downloadFile() throws FileNotFoundException, InterruptedException {
-        Configuration.timeout=20000;
-//        Configuration.browser = "firefox";
+        Configuration.timeout=30000;
+        Configuration.pageLoadTimeout =  30;
+        Configuration.browser = "firefox";
         Configuration.downloadsFolder = "C:\\TestDownload";
         fileDownload = FOLDER;
 
         open("https://www.google.com/intl/ru_ru/chrome/");
-        $("button#js-download-hero.chr-cta__button.chr-cta__button--blue.js-download.chr-full-bleed-hero__button.chr-cta__button--download.js-sticky-trigger.show").shouldBe(Condition.visible);
-        File report = $(By.id("js-download-hero")).download();
+//        $("button#js-download-hero.chr-cta__button.chr-cta__button--blue.js-download.chr-full-bleed-hero__button.chr-cta__button--download.js-sticky-trigger.show").shouldBe(Condition.visible);
+        File report = $("button#js-download-hero.chr-cta__button.chr-cta__button--blue.js-download.chr-full-bleed-hero__button.chr-cta__button--download.js-sticky-trigger.show").shouldBe(Condition.visible).download();
         TimeUnit.SECONDS.sleep(10);
         Assertions.assertEquals(report.getName(), "ChromeSetup.exe");
     }
