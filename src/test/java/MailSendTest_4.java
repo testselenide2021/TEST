@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class MailSendTest_4 {
     @Test
     void mailSendTest() {
-        Configuration.timeout=30000;
+        Configuration.timeout=20000;
         Configuration.browser = "firefox";
         open("https://mail.ru/");
 

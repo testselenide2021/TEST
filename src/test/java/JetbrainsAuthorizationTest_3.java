@@ -8,7 +8,7 @@ public class JetbrainsAuthorizationTest_3 {
     @Test
 
     void authorizationTest(){
-        Configuration.timeout=30000;
+        Configuration.timeout=20000;
         Configuration.browser = "firefox";
         open("https://www.jetbrains.com/ru-ru/");
 

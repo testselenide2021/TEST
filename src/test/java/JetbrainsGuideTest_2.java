@@ -11,6 +11,7 @@ public class JetbrainsGuideTest_2 {
         void jetbrainsTest() {
             // Переходим в раздел "С чего начать?", листаем инструкцию "Overview of the user interface"
             // и просматриваем раздел Getting started
+            Configuration.timeout=20000;
             Configuration.startMaximized = true;
             Configuration.browser = "firefox";
 
