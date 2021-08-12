@@ -9,7 +9,6 @@ public class JetbrainsAuthorizationTest {
 
     void authorizationTest(){
         Configuration.timeout=20000;
-        Configuration.browser = "firefox";
         open("https://www.jetbrains.com/ru-ru/");
 
         $(".site-header__actions > div:nth-child(1) > div:nth-child(2) > a:nth-child(1)")

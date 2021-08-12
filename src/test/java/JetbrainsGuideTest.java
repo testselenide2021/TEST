@@ -13,7 +13,6 @@ public class JetbrainsGuideTest {
             // и просматриваем раздел Getting started
             Configuration.timeout=20000;
             Configuration.startMaximized = true;
-            Configuration.browser = "firefox";
 
             open("https://www.jetbrains.com/ru-ru/idea/resources/");
 

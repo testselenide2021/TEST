@@ -10,7 +10,6 @@ public class JetbrainsHotkeyCheck {
     void hotkeyCheck(){
         // Список горячих клавиш на jetbrains.com
         Configuration.timeout=20000;
-//        Configuration.browser = "firefox";
         open("https://www.jetbrains.com/ru-ru/idea/resources/");
 
         ElementsCollection hotKeys = $$(".wt-code.wt-code_theme_light");
