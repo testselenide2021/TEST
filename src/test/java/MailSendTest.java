@@ -12,7 +12,7 @@ public class MailSendTest {
         Configuration.timeout=20000;
         open("https://mail.ru/");
 
-        mailAuth("testselenide", "javauicheckup");
+        mailAuth("testselenide1", "javauicheckup");
         mailSend("bikmaevrr@mail.ru", LocalDateTime.now() + " Тестовое сообщение", "Test message 999999");
     }
 
