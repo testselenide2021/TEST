@@ -12,7 +12,7 @@ public class MailSendTest {
         Configuration.timeout=20000;
         open("https://mail.ru/");
 
-        mailAuth("testselenide1", "javauicheckup");
+        mailAuth("testselenide", "javauicheckup");
         mailSend("bikmaevrr@mail.ru", LocalDateTime.now() + " Тестовое сообщение", "Test message 999999");
     }
 
@@ -24,20 +24,12 @@ public class MailSendTest {
     }
 
     void mailSend(String sendTo, String subject, String messageText) {
-//        $(".compose-button__wrapper").shouldBe(visible).click();
-//        $(".scrollview--SiHhk.scrollview_main--3Vfg9").shouldBe(visible);
-//        $(".container--H9L5q.size_s--3_M-_").setValue(sendTo);
-//        $(By.name("Subject")).setValue(subject);
-//        $x("/html/body/div[15]/div[2]/div/div[1]/div[2]/div[3]/div[5]/div/div/div[2]/div[1]/div[1]/text()").click();
-//        $x("/html/body/div[15]/div[2]/div/div[1]/div[2]/div[3]/div[5]/div/div/div[2]/div[1]/div[1]/text()").shouldBe(visible).setValue(messageText);
-//        $("span.button2.button2_base.button2_primary.button2_hover-support.js-shortcut").shouldBe(visible).click();
+
         $(".compose-button__wrapper").shouldBe(visible).click();
         $(".scrollview--SiHhk.scrollview_main--3Vfg9").shouldBe(visible);
         $(".container--H9L5q.size_s--3_M-_").setValue(sendTo);
         $(By.name("Subject")).setValue(subject);
         $x("/html/body/div[15]/div[2]/div/div[1]/div[2]/div[3]/div[5]/div/div/div[2]/div[1]/div[1]").shouldBe(visible).setValue(messageText);
         $("span.button2.button2_base.button2_primary.button2_hover-support.js-shortcut").shouldBe(visible).click();
-
-
     }
 }
