@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class JetbrainsAuthorizationTest_3 {
+public class JetbrainsAuthorizationTest {
     @Test
 
     void authorizationTest(){

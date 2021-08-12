@@ -1,11 +1,10 @@
-
 import org.junit.jupiter.api.Test;
 import com.codeborne.selenide.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class JetbrainsHotkeyCheck_1 {
+public class JetbrainsHotkeyCheck {
     @Test
 
     void hotkeyCheck(){
@@ -28,9 +27,5 @@ public class JetbrainsHotkeyCheck_1 {
             aboutKeys.get(7).shouldBe(visible).shouldHave(text("Генерация кода"));
             aboutKeys.get(8).shouldBe(visible).shouldHave(text("Поиск использований"));
             aboutKeys.get(9).shouldBe(visible).shouldHave(text("Поиск везде"));
-
-//        System.out.println("---------------------Console output Start--------------------- \n");
-//        System.out.println("---------------------Console output End--------------------- \n");
     }
-
 }

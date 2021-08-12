@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class JetbrainsGuideTest_2 {
+public class JetbrainsGuideTest {
 
         @Test
 
@@ -61,9 +61,6 @@ public class JetbrainsGuideTest_2 {
             $(By.linkText("Migrate from NetBeans")).shouldBe(visible).click();
             // Chapter 3 - Getting started ---> Migrate from NetBeans
             $(By.linkText("IntelliJ IDEA vs NetBeans terminology")).shouldBe(visible).click();
-
-            System.out.println("---------------------Console output Start--------------------- \n");
-            System.out.println("---------------------Console output End----------------------- \n");
         }
     }
 
