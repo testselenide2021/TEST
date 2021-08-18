@@ -33,7 +33,7 @@ public class MailSendTest {
         $(".container--H9L5q.size_s--3_M-_").setValue(sendTo);
         $(By.name("Subject")).setValue(subject);
         ElementsCollection array = $$(".llc.js-tooltip-direction_letter-bottom.js-letter-list-item.llc_normal");
-        $("*[role='textbox']").shouldBe(visible).append(messageText + " "+ array.size());
+        $("*[role='textbox']").shouldBe(visible).append(messageText + array.size());
         $("span.button2.button2_base.button2_primary.button2_hover-support.js-shortcut").shouldBe(visible).click();
     }
 }
