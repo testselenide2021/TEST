@@ -21,10 +21,9 @@ public class MailSendTest {
 
     void mailAuth(String user, String pass) {
         $(By.name("login")).shouldBe(visible).setValue(user);
-//        $(".button.svelte-1eyrl7y").shouldBe(visible).click();
         $("*[data-testid='enter-password']").shouldBe(visible).click();
         $(By.name("password")).shouldBe(visible).setValue(pass);
-        $(".second-button.svelte-1eyrl7y").shouldBe(visible).click();
+        $("*[data-testid='login-to-mail']").shouldBe(visible).click();
     }
 
     void mailSend(String sendTo, String subject, String messageText) {
